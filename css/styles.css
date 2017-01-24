@@ -1,0 +1,15 @@
+/* alinhar imagens no meio da página */
+.img-responsive {
+    margin: 0 auto;
+    width: 450px;
+    height: 293px;
+    padding: 0px 10px 0px 10px;
+}
+
+
+footer {
+    background-color: #2b2b2b;
+    color: #ddd;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
