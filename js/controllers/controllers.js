@@ -6,6 +6,7 @@ app.controller('mainCtrl', function ($scope, $http) {
 });
 
 app.controller('sobreCtrl', function ($scope, $http) {
+    $scope.responseBody = {};
     $http.get('http://prova.formahomolog.com.br/api/Destiny').success(function (data) {
         console.log(data);
         $scope.responseBody = data;
