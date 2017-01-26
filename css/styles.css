@@ -6,10 +6,17 @@
     padding: 0px 10px 0px 10px;
 }
 
-
 footer {
     background-color: #2b2b2b;
     color: #ddd;
     padding-top: 20px;
     padding-bottom: 40px;
+}
+
+table tr th{
+    text-align: center;
+}
+
+table tr td{
+    text-align: center;
 }

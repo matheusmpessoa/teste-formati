@@ -17,12 +17,6 @@ app.config(function ($routeProvider) {
         controller: 'sobreCtrl'
     })
 
-    // Rota para a página contato
-    .when('/contato', {
-        templateUrl: 'pages/contato.html',
-        controller: 'contatoCtrl'
-    })
-
     // Rota para a página de erro 404
     .when('/404', {
         templateUrl: 'pages/404.html',

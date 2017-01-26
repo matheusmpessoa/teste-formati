@@ -1,6 +1,47 @@
 <div class="jumbotron text-center">
     <h1>Home</h1>
 
-    <p>{{ message }}</p>
-    <img src="https://media4.giphy.com/media/xT5LMGMEKkV5Heg2WI/200.gif#20" alt="Homer em casa" class="img-responsive">
+    <hr>
+
+    <h2>Tabela</h2>
+    <table class="table table-hover">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+        </tr>
+        <tr ng-repeat="info in responseBody.Response">
+            <td>{{info.Id}}</td>
+            <td>{{info.Name}}</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Lista</h2>
+    <ul class="list-group" ng-repeat="info in responseBody.Response">
+        <li class="list-group-item">{{info.Name}}</li>
+    </ul>
+
+    <hr>
+
+    <h2>Menu</h2>
+    <ul class="nav nav-pills" ng-repeat="info in responseBody.Response">
+        <li><a href="#/">{{info.Name}}</a></li>
+    </ul>
+
+    <hr>
+
+    <h2>Dropdown</h2>
+    <ul class="nav nav-pills">
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#/" role="button" aria-haspopup="true" aria-expanded="false">
+                Dropdown <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+                <ul ng-repeat="info in responseBody.Response">
+                    <li><a href="#/">{{info.Name}}</a></li>
+                </ul>
+            </ul>
+        </li>
+    </ul>
 </div>
